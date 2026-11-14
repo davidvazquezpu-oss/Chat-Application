@@ -1,4 +1,4 @@
-# 💬 Aplicación de Chat Cliente-Servidor (Java + Sockets + JavaFX)
+# 💬 Aplicación de Chat Cliente-Servidor (Java + Sockets + JavaFX)Rodrigo
 
 Este proyecto está diseñado para construirse **paso a paso**. Primero crearemos una estructura minimalista dedicada únicamente al **motor del chat en consola** (Fases 1 a 3). Solo cuando ese motor funcione al 100%, ampliaremos las carpetas para añadir la **interfaz gráfica de JavaFX** (Fases 4 y 5).
 
