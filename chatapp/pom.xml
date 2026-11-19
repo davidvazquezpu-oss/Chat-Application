@@ -35,7 +35,7 @@
                 <version>0.0.8</version>
                 <configuration>
                     <!-- Cambia esto al nombre de tu clase principal de JavaFX cuando la crees -->
-                    <mainClass>com.chatapp.client.ClientApp</mainClass>
+                    <mainClass>com.mycompany.chat.client.ClientApp</mainClass>
                 </configuration>
             </plugin>
         </plugins>
