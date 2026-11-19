@@ -63,17 +63,19 @@ public class Server {
         //Utizamos un try-with-resource
         try (socket;
         
+        /*Sun buffers:
+        que toma los bytes entrantes del cliente (socket.getInputStream()) y los convierte a caracteres usando codificación UFT_8*/
          BufferedReader reader = new BufferedReader(
                  new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8));
          PrintWriter writer = new PrintWriter(
                  socket.getOutputStream(), true, StandardCharsets.UTF_8)) {
-
+        //readLine() lee el buffer reader hasta en contrar \n y lo guarda en un string
         String linea = reader.readLine();
         if (linea == null) {
             System.out.println("El cliente se desconectó sin enviar nada.");
             return;
         }
-        System.out.println("Mensaje recibido del cliente: " + linea);
+        System.out.println("Mensaje recibido del cliente fue : \n" + linea);
         writer.println("Mensaje recibido");
             
         }catch (Exception e) {
