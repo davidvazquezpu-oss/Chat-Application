@@ -31,6 +31,23 @@ i-chat-app/
 
 ### Fase 1: El "Teléfono" Básico (Conexión 1 a 1 en Consola)
 
+```text
+┌─────────────────────────────────────────────────────┐
+│  TU PC (un solo ordenador, un solo usuario)         │
+│  IP: 127.0.0.1 (localhost)                          │
+│                                                     │
+│  ┌──────────────────┐      ┌──────────────────┐     │
+│  │  TERMINAL A      │      │  TERMINAL B      │     │
+│  │                  │      │                  │     │
+│  │  Server.java     │◄════►│  NetworkClient   │     │
+│  │  (servidor)      │      │  (cliente)       │     │
+│  │                  │      │                  │     │
+│  │  :5000           │      │  puerto efímero  │     │
+│  └──────────────────┘      └──────────────────┘     │
+│                                                     │
+│  Mismo usuario, mismo PC, misma IP                  │
+└─────────────────────────────────────────────────────┘
+```
 #### 🎯 ¿Por qué hacemos esta fase?
 Antes de crear un chat con muchas personas y ventanas bonitas, necesitas entender cómo dos programas distintos en Java pueden enviarse un simple texto entre sí. Si logras que un programa diga "Hola" y el otro responda "Recibido", ya tienes la base de internet.
 
