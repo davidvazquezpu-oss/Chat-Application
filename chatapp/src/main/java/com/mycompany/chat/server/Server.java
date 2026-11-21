@@ -12,7 +12,7 @@ public class Server {
     Es el "enchufe" de comunicacion virtual (formado por IP + Puerto)
     que permite que dos programas se envíen y reciban datos a través de la red.
     
-    En la Fase 1 no trabajaremos con IP todavía 
+    En la Fase 1 no trabajaremos con IP real todavía 
     */
 
     /*Preparamos la base del servidor de nuestro chat
