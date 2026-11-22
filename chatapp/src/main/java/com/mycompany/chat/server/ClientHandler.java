@@ -75,11 +75,11 @@ public class ClientHandler implements Runnable {
         }
     }
     /*
-    Tener claro esto 2:
+    Tener claro esto 2 cosas :
     -Cada cliente tiene su propio hilo co un writer el encargado de llevar al servidor
     -Un hilo puede llamar a un método de un objeto que pertenece a otro cliente
     
-    Explicacion:
+    Explicacion como funcina:
     1ª Entender:
     Imagina un Server un caable unido con cada cliente 
     
