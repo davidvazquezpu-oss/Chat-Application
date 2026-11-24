@@ -58,7 +58,7 @@ Antes de crear un chat con muchas personas y ventanas bonitas, necesitas entende
 * **`BufferedReader` (El altavoz):** Es la herramienta para **escuchar** lo que llega por el cable (`Socket`). Cuando llamas a `.readLine()`, el programa espera hasta que el otro extremo envíe una línea de texto completa.
 
 #### ✅ Tareas de la Fase 1
-* [ ] **Crear el servidor mínimo en `Server.java`:**
+* [x] **Crear el servidor mínimo en `Server.java`:**
   * [ ] Abrir un `ServerSocket(5000)`.
   * [ ] Esperar una conexión con `Socket cliente = serverSocket.accept()`.
   * [ ] Preparar el `BufferedReader` para leer lo que dice el cliente y el `PrintWriter` para responderle.
